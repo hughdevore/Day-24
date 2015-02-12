@@ -1,0 +1,50 @@
+
+.todo-check-box-clicked {
+	text-decoration: line-through;
+}
+
+#main-header {
+	background-color: rgb(101, 148, 203);
+	overflow: hidden;
+	padding: 1em 1em 1em 1em;
+	border-radius: 1em;
+	margin-top: 1em;
+}
+
+#submit-button {
+	margin-top: 1.75em;
+}
+
+
+#logo {
+	font-family: 'Galindo', cursive;
+	font-size: 5em;
+}
+
+@media (max-width: 545px) {
+		#logo {
+			font-size: 3em;
+	}
+}
+
+#add-box {
+	border: 1px solid rgb(198, 174, 141);
+	margin-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 1em;
+	width: 48%;
+}
+
+#list-box {
+	border: 1px solid rgb(198, 174, 141);
+	margin-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 1em;
+	float: right;
+	width: 48%;
+
+}
+
+#add-button{
+	margin-top: 1em;
+}

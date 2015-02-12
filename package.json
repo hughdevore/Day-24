@@ -1,0 +1,23 @@
+{
+  "name": "Day-19",
+  "version": "1.0.0",
+  "description": "todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hughdevore/Day-19.git"
+  },
+  "keywords": [
+    "todo",
+    "list"
+  ],
+  "author": "Hugh J. Devore",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/hughdevore/Day-19/issues"
+  },
+  "homepage": "https://github.com/hughdevore/Day-19"
+}

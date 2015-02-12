@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<title>to-Hugh List</title>
+		<link href='http://fonts.googleapis.com/css?family=Galindo|Unkempt|Bangers' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="app-view">
+
+				<div id="main-header">
+					<h1 id="logo">to-Hugh list</h1>	
+					<div id="login">
+						<div class="form-group col-xs-5">
+							<label for="exampleInputEmail1">User Name</label>
+							<input type="email" class="form-control" id="user" placeholder="Enter User Name">
+						</div>
+						<div class="form-group col-xs-4">
+							<label for="exampleInputPassword1">Password</label>
+							 <input type="password" class="form-control" id="password" placeholder="Enter Password">
+						</div>
+						<div class="form-group col-xs-2">
+							<button type="submit" class="btn btn-default" id="submit-button">Submit</button>
+						</div>
+					</div>
+				</div>
+
+			
+				<div class="col-xs-6" id="add-box">
+					<h3 class=".h3">ADD:</h3>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="input-group">
+								<input type="text" id="text-box" class="form-control" aria-label="...">					
+								<button type="button" id="add-button" class="btn btn-primary"> Add to List!</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-xs-6" id="list-box">
+					<ul id ="append-here" class="list-group">
+						<h3 class=".h3">HERE:</h3>
+					</ul>
+				</div>
+
+				<!-- these are my templates -->
+				<script type="text/html" id="my-list">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<input type="checkbox" class="check-box" aria-label="...">
+								</span>
+								<div id="text-box" class="form-control todo-check-box-clicked" aria-label="..."><%= todo %></div>
+							</div>
+						</div>	
+					</div>
+				</script>
+			</div>
+		</div>
+
+	<!-- These are my library files -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+	<script type="text/javascript" src="bower_components/backbone/backbone.js"></script>
+
+	<!-- these are my models -->
+	<script type="text/javascript" src="scripts/models/TodoModel.js"></script>
+
+	<!-- these are my collections -->
+	<script type="text/javascript" src="scripts/collections/TodoCollection.js"></script>
+
+	<!-- These are my view files -->
+	<script type="text/javascript" src="scripts/views/TodoView.js"></script>
+	<script type="text/javascript" src="scripts/views/AppView.js"></script>
+
+	<!-- This is my main file -->
+	<script type="text/javascript" src="scripts/main.js"></script>
+
+	</body>
+
+</html>
