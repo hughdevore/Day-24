@@ -5,7 +5,8 @@ var AppView = Backbone.View.extend({
 		_.bindAll(
 			this,
 			'onAddButtonClick',
-			'onTodoAdded'
+			'onTodoAdded',
+			'onSubmitButtonClick'
 		);
 
 		this.$addButton = $('#add-button');
@@ -38,10 +39,16 @@ var AppView = Backbone.View.extend({
 	},
 
 	onSubmitButtonClick: function(user) {
-		console.log('Submitted!');
 		user = $('#user').val();
-		console.log(this.todo.get('user'));
-		// this.savedTodo =  this.model.get('user'});
+		// this.todo.model.user;
+		console.log(this);
+		console.log(self.TodoCollection.TodoModel['user']);
+		
+		// if(user = self.todo({user}))
+		// self.todo.fetch();
+
+
+		// this.savedTodo =  this.model.get('user');
 	
 		// this.savedTodoView = this.savedTodo.fetch({
 		// 	todo: ''
